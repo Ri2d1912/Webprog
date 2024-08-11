@@ -1,0 +1,906 @@
+/* Add your styes here. */
+
+body{
+    background-color: rgb(43, 41, 41);
+    margin: 0;
+    font: 14px Verdana, Sans-Serif;
+}
+.logo{
+    background-color: rgb(95, 93, 93);
+    margin: -35px 0px 0px -5px;
+    height: 170px;
+}
+
+.logo img{
+    width: 360px;
+    margin-top: 15px;
+}
+
+h1{
+    font-size: 30px;
+    margin-left: 20px;
+    color: rgba(190, 188, 188, 0.726);
+}
+
+
+.movie-info-{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+  }
+
+.main-nav ul li :hover{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 25px;
+  }
+
+.main-nav ul {
+    list-style: none; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px; 
+    margin: -38px 40px 50px 340px;
+    height: 32px;
+    text-align: center;
+    font-size: 19px;
+    cursor: pointer;
+
+}
+
+.main-nav ul li{
+    display: inline-block;
+    background-color: rgb(202, 190, 22);
+   
+}
+
+.more-info-button{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    top: 20px;
+    padding: 2px;
+    position: relative;
+    font-weight: 600;
+    background-color: rgb(202, 190, 22);
+}
+
+.more-info-button:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+
+/* --------------------- index css ---------------------*/
+
+.index h1{
+        color: rgba(245, 241, 241, 0.726);
+}
+.index .movie-info-{
+    position: relative;
+    margin: 0px 20px 30px 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+    border-radius: 30px;
+    box-shadow: 7px 10px 15px rgb(19, 13, 13);
+    height: 430px;
+    padding: 10px;
+}
+
+.index .movie-info-::before {
+    content: '';
+    background-image: url('../images/insideout-3.jpg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.index .info{
+    color: rgba(248, 230, 230, 0.726);
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.index .movie-info- img{
+    width: 280px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 17px 10px 15px rgb(34, 33, 33);
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.index.movie-info- img:hover{
+    width: 290px;
+    height: 410px;
+    box-shadow: 25px 20px 20px rgb(22, 22, 22);
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.rent-now.button{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    top: -117px;
+    left: 490px;
+    padding: 2px;
+    position: relative;
+    font-weight: 600;
+    background-color: rgb(202, 190, 22);
+    font-size: 18px;
+}
+
+.rent-now.button:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.ui a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    z-index: 2;
+}
+
+.ui{
+    position: absolute;
+    z-index: 2;
+    top: -20px;
+    left: 770px;
+
+}
+
+.index .ui{
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 760px;
+
+}
+
+.rental{
+    color: rgba(235, 235, 235, 0.726);
+    font-weight: 900;
+}
+
+
+#rental-dialog.show{
+    display: block;
+    background-color: rgba(80, 77, 77, 0.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 2;
+    position: fixed;
+}
+
+#rental-dialog{
+    display: none;
+}
+
+.rental .container{
+    background-color: rgb(44, 42, 42, .8);
+    padding: 100px;
+    position: absolute;
+    top: 20px;
+    margin-left: 380px;
+    margin-top: 3px;
+    z-index: 1;
+    position: fixed;
+    padding-top: 150px;
+    padding-left: 40px;
+    border-radius: 40px;
+}
+.rental-steps{
+    border: 3px solid;
+    width: 560px;
+    height: 200px;
+    position: relative;
+    top: -65px;
+    margin-left: 70px;
+    margin-bottom: -50px;
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.login{
+    border: 3px solid;
+    position: relative;
+    top: 5px;
+    margin-left: 70px;
+    width: 600px;
+    height: 250px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+fieldset{
+    border: none;
+}
+
+.login input[type='email'], input[type='password'] {
+    background-color: rgb(95, 93, 93);
+}
+.up-coming{
+    padding-left: 20px;
+    border-radius: 30px;
+    color: rgba(190, 188, 188, 0.726);
+    margin: -20px 10px 50px 10px;
+    
+}
+
+.up-coming .movies-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.up-coming img{
+    border-radius: 10px;
+    box-shadow: 7px 0px 15px rgb(34, 33, 33);
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+
+.up-coming img:hover{
+    box-shadow: 10px 5px 12px rgb(10, 0, 0);
+    width: 217px;
+    height: 322px;
+    cursor: pointer;
+}
+
+.up-coming .movies-list a{
+    color: rgba(190, 188, 188, 0.726);
+    background-color: rgb(46, 44, 44);
+    box-shadow: 15px 15px 15px rgb(34, 33, 33);
+    border-radius: 30px;
+    height: 435px;
+}
+
+figcaption:hover{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.movie-cover-link{
+    text-align: center;
+    font-size: 25px;
+}
+
+.recent-comments{
+    background-color: rgb(46, 44, 44);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    color: rgba(190, 188, 188, 0.726);
+    border-radius: 30px;
+}
+
+.comment{
+    border: 1px solid rgb(87, 85, 85);
+    border-left: none;
+    border-right: none;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+.comment .name{
+    color: red;
+}
+
+.comment .movie-name a{
+    color: rgb(202, 190, 22);;
+}
+
+.comment time {
+    color: rgb(105, 105, 105); 
+    font-weight: 900;
+
+}
+
+.watch-at-home{
+    margin: 50px 0px 70px 30px;
+    color: rgba(190, 188, 188, 0.726);
+    display: block;
+    text-align: center;
+}
+
+.browse-all-movies-button{
+    color: red;
+}
+/* --------------------- All movies css ---------------------*/
+.all-movies h1{
+    color: rgba(245, 241, 241, 0.726);
+}
+.movies-list li{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    column-gap: 30px;
+    color: rgba(190, 188, 188, 0.726);
+}
+
+.all-movies .movie-info-{
+   background-color: rgb(63, 62, 62);
+   margin: 0px 20px 30px -10px;
+   text-align: justify;
+   border-radius: 30px;
+   box-shadow: 7px 10px 15px rgb(19, 13, 13);
+   height: 430px;
+}
+
+.all-movies .movie-info- img:hover{
+    box-shadow: 10px 5px 12px rgb(10, 0, 0);
+    width: 355px;
+    height: 427px;
+    cursor: pointer;
+}
+.all-movies .movie-info- img{
+    width: 350px;
+    height: 423px;
+    border-radius: 30px;
+    box-shadow: 7px 0px 15px rgb(34, 33, 33);
+    margin-top: 3px;
+}
+
+.all-movies .info{
+    padding-bottom: 20px;
+    margin: 10px 30px 0px 30px;
+}
+
+@media (min-width: 1920px) {
+    .movies-list .info {
+        font-size: 16px;
+    }
+
+    .more-info-button{
+        top: 29px;
+    }
+
+    .rent-now.button{
+        top: -110px;
+    }
+
+    .rental-steps{
+        margin-left: 220px;
+    }
+
+    .ui a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        z-index: 2;
+    }
+    
+    .ui{
+        position: absolute;
+        z-index: 2;
+       
+    
+    }
+
+    .back-to-top{
+        position: absolute;
+        top: -180px;
+        left: 1220px;
+    }
+
+    .show{
+        border: 1px solid white;
+        margin: 20px 100px 20px 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+    
+        .rental .container{
+            background-color: rgb(44, 42, 42, .8);
+            padding: 100px;
+            position: absolute;
+            top: 0;
+            margin-left: 500px;
+            margin-top: 100px;
+            z-index: 1;
+            position: fixed;
+            padding-top: 150px;
+            padding-left: 40px;
+            border-radius: 40px;
+        }
+        .rental-steps{
+            border: 3px solid;
+            width: 560px;
+            height: 200px;
+            position: relative;
+            top: -65px;
+            margin-left: 70px;
+            margin-bottom: -50px;
+            border-radius: 40px;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        #rental-dialog.show{
+            display: block;
+            background-color: rgba(80, 77, 77, 0.7);
+            position: absolute;
+            top: -20px;
+            left: -100px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            position: fixed;
+        }
+
+        .success.label{
+            margin-left: 150px;
+        }
+        
+        .alert.label{
+            margin-left: 150px;
+        }
+}
+
+@media (max-width: 1420px) {
+    .movies-list li{
+        grid-template-columns: 1fr ;
+    }
+}
+
+form{
+    padding-top: 10px;
+}
+input[type='email'], input[type='text']{
+    background-color: rgb(92, 91, 91);
+}
+
+input::placeholder{
+    color: rgba(216, 214, 214, 0.726);
+}
+
+input[type='submit']:hover{
+    background-color: rgb(202, 190, 22);
+}
+
+
+/* ---------------------More info css---------------------- */
+.alert.label{
+    color: red;
+}
+.rental .rent-now.button:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.movie .movie-info- {
+    margin: 0px 20px 30px 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+    border-radius: 30px;
+    box-shadow: 7px 10px 15px rgb(19, 13, 13);
+    height: 430px;
+    padding: 10px;
+    position: relative;
+}
+
+
+.movie .movie-info-::before {
+    content: '';
+    background-image: url('../images/insideout-1.jpg');
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 30px;
+}
+
+
+.movie .info{
+    color: rgba(255, 255, 255, 0.726);
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+.movie .movie-info- img{
+    width: 280px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 17px 10px 15px rgb(34, 33, 33);
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.movie .movie-info- img:hover{
+    width: 290px;
+    height: 410px;
+    box-shadow: 25px 20px 20px rgb(22, 22, 22);
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+
+.movie .rent-now.button{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+    top: -97px;
+    left: 370px;
+    padding: 2px;
+    position: relative;
+    font-weight: 600;
+    background-color: rgb(202, 190, 22);
+    font-size: 18px;
+}
+
+.movie .info{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.movie .ui{
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+.photos-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    row-gap: 50px;
+    list-style: none;
+    background-color: rgb(46, 43, 43);
+    margin: 0px 20px 0px 20px;
+    padding: 40px 0px 50px 0px;
+    border-radius: 30px;
+    column-gap: 40px;
+}
+
+.photos-list img{
+    position: relative;
+    width: 600px;
+    height:350px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 10px rgb(41, 40, 40);
+    margin-left: 37px;
+}
+
+.photos-list li{
+    background-color: rgb(56, 53, 53);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(53, 52, 52);
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 30px;
+}
+
+.photos-list img:active{
+    position: absolute;
+    width: 600px;
+    height:350px;
+    box-shadow: 25px 20px 20px rgb(22, 22, 22);
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+
+.related-movies ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    column-gap: 60px;
+}
+
+.related-movies li{
+    background-color: rgb(46, 45, 45);
+    margin: 0px 20px 30px -10px;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 7px 10px 15px rgb(19, 13, 13);
+    height: 430px;
+}
+
+.related-movies img{
+    border-radius: 10px;
+    box-shadow: 7px 0px 15px rgb(34, 33, 33);
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+
+.related-movies img:hover{
+    box-shadow: 10px 5px 12px rgb(10, 0, 0);
+    width: 217px;
+    height: 322px;
+    cursor: pointer;
+}
+
+.related-movies h2{
+    color: rgba(190, 188, 188, 0.726);
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 25px;
+}
+
+figcaption:hover{
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+figcaption{
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.movie .related-movies a{
+    color: rgba(190, 188, 188, 0.726);
+}
+
+/* -------------------- about ----------------------- */
+
+.about{
+    color: rgba(245, 241, 241, 0.726);
+}
+.about .about{
+    text-align: center;
+    color: rgba(245, 241, 241, 0.726);
+}
+
+.about h1{
+    color: rgba(245, 241, 241, 0.726);
+}
+.about article{
+    margin-left: 50px;
+}
+
+.locations{
+    margin: 25px 100px 100px 100px;
+    background-color: rgb(46, 44, 44);
+    padding: 20px;
+    box-shadow: 0px 0px 50px rgb(53, 52, 52);
+}
+
+.locations a{
+    color: rgb(206, 13, 13);
+    list-style: none;
+}
+.locations img{
+    width: 500px;
+    height: 300px;
+}
+.locations ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    list-style: none;
+    margin-right: 50px;
+    margin-left: 30px;
+    column-gap: 40px;
+
+}
+
+.locations li img:active{
+    width: 650px;
+    height: 450px;
+ 
+}
+
+.store-location{
+    text-align: center;
+    background-color: rgb(51, 48, 48);
+    padding: 15px;
+    margin-bottom: 35px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgb(109, 108, 108);
+}
+/* --------------------Contact us----------------------- */
+.contact .tabs .active {
+    border: 1px solid;
+    background-color: yellow;
+    color: black;
+    font-weight: 900;
+}
+
+#tabcontent1, #tabcontent2, #tabcontent3{
+    display: none;
+}
+
+.contact #tabcontent1.active {
+    border: 1px solid;
+    display: block;
+}
+
+.contact #tabcontent2.active {
+    border: 1px solid;
+    display: block;
+}
+
+.contact #tabcontent3.active {
+    border: 1px solid;
+    display: block;
+}
+
+
+.contact h1{
+    color: rgba(245, 241, 241, 0.726);
+}
+
+.contact .yield{
+    color: rgba(216, 212, 212, 0.726);
+    margin-left: 60px;
+    margin-bottom: 90px;
+}
+
+.tab-content{
+    margin: 20px 60px -30px 0px;
+    padding: 30px;
+    border: 1px solid rgb(124, 121, 121);
+    border-left: none;
+    border-right: none;
+    background-color: rgb(46, 44, 44);
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact .tabs{
+    display: inline-block;
+    width: 400px;
+    margin-top: 30px;
+    column-gap: 20px;
+}
+.contact .tabs a{
+    color: rgb(173, 173, 66);
+    margin-left: 30px;
+}
+/* ------------------------------------------- */
+
+.hidden{
+    display: none;
+}
+
+
+.success.label{
+    background-color: rgb(199, 201, 202);
+    color: black;
+    padding: 30px 130px 30px 130px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    position: fixed;
+    z-index: 3;
+}
+
+.alert.label{
+    background-color: rgb(199, 201, 202);
+    color: rgb(245, 0, 0);
+    padding: 30px 130px 30px 130px;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    position: fixed;
+    z-index: 3;
+}
+.back-to-top{
+    display: inline;
+    background-color: rgb(245, 4, 4);
+    position: relative;
+    top: -180px;
+    left: 1220px;
+}
+
+.back-to-top a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.back-to-top :hover{
+    background-color: rgb(228, 214, 16);
+}
+
+
+footer{
+    background-color: rgb(58, 57, 57);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 10px 10px 20px 70px;
+    margin-top: 20px;
+    color: rgba(190, 188, 188, 0.726);
+}
+
+.footer-nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;  
+    list-style: none; 
+    margin-left: -80px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+    
+}
+
+.footer-nav li{
+    text-align: center;
+    border: 2px solid;
+    height: 30px;
+    margin-top: -18px;
+    
+}
+
+
+.footer-nav li a{
+    text-decoration: none;
+    color: rgba(190, 188, 188, 0.726);
+    font-size: 20px;
+}
+
+.footer-nav ul li :hover{
+   color: rgb(0, 0, 0);
+   font-weight: 900;
+   font-size: 26px;
+}
+
+
+.copyright{
+    background-color: rgb(27, 26, 26);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    color: rgb(146, 140, 140);
+    font-weight: 700;
+    margin-left: -70px;
+    margin-right: -10px;
+}
+
+.newsletter{
+    
+    display: inline-block;
+
+}
+.search{
+
+    display: inline-block;
+    
+}
+.footer-help{
+    padding-left: 30px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+input[type='submit']{
+    background-color: rgb(206, 193, 13);
+    font-weight: 400;
+
+}
